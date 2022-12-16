@@ -1,0 +1,42 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: python train.py --data coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← downloads here (7 MB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ../datasets/coco128  # dataset root dir
+train: /content/data/images/train  # train images (relative to 'path') 128 images
+val: /content/data/images/val  # val images (relative to 'path') 128 images
+test: /content/data/images/test # test images (optional)
+
+# Classes
+names:
+  0: Red Brake Trouble
+  1: Yellow Brake Trouble
+  2: Red Charge System Warning
+  3: Blue Temperature Indicator
+  4: Red Temperature Warning
+  5: Red Oil
+  6: Yellow Oil
+  7: Yellow Check Engine
+  8: Red Air Bag Warning
+  9: Yellow Air Bag Warning
+  10: Yellow Anti-Lock Brake System Fault
+  11: Red Power Steering Trouble
+  12: Yellow Power Steering Trouble
+  13: Yellow Slip
+  14: Yellow Tire Pressure
+  15: Red Tire Pressure
+  16: Yellow Fuel
+  17: Red Seat Belt Reminder
+  18: Green Tail Light
+  19: Blue High Beam On
+  20: Green Automatic Headlamp Dimmer
+
+
+# Download script/URL (optional)
+download: https://ultralytics.com/assets/coco128.zip
